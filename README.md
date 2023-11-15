@@ -52,6 +52,7 @@ catkin_make
 
 - [机器人控制](https://github.com/DDTRobot/diablo_sdk/tree/main/example/movement_ctrl)
 - [机器人状态读取](https://github.com/DDTRobot/diablo_sdk/tree/main/example/robot_status)
+- [机器人状态读取与控制](https://github.com/DDTRobot/diablo_sdk/tree/main/example/status_update_and_ctrl)
 
 
 

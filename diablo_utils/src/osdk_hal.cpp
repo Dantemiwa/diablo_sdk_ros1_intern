@@ -203,8 +203,10 @@ void HAL_Pi::RXMonitorProcess(void)
             continue;
         }
         
-        if(header.data.ACK)    serial_rx_ack_cond.notify_all();
-        else                   serial_rx_data_cond.notify_all();
+        if(header.data.ACK){
+            serial_rx_ack_cond.notify_all();
+        }
+        else{serial_rx_data_cond.notify_all();}
 
         header.data.SOF = 0xFF;     // set SOF to 0xFF, meaning processed packet
         lock.unlock();
